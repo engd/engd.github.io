@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>How AWS Lambda made me a better cloud developer?</title>
+    <meta name="description" content="" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="../favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=1e8d918b72" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+
+    <link rel="canonical" href="index.html" />
+    <meta name="referrer" content="origin" />
+    
+    <meta property="og:site_name" content="Let's Go Exploring!" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="How AWS Lambda made me a better cloud developer?" />
+    <meta property="og:description" content="AWS Lambda is a pretty big deal both for devops and REST APIs. It is a simple promise; instead of running a machine at all times to compute when needed, start a machine (fast!) when needed and release it after..." />
+    <meta property="og:url" content="http://localhost:2368/how-aws-lambda-made-me-a-better-programmer/" />
+    <meta property="article:published_time" content="2015-12-20T03:38:26.661Z" />
+    <meta property="article:modified_time" content="2015-12-20T03:55:15.057Z" />
+    <meta property="article:tag" content="lambda" />
+    <meta property="article:tag" content="aws" />
+    <meta property="article:tag" content="ami" />
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="How AWS Lambda made me a better cloud developer?" />
+    <meta name="twitter:description" content="AWS Lambda is a pretty big deal both for devops and REST APIs. It is a simple promise; instead of running a machine at all times to compute when needed, start a machine (fast!) when needed and release it after..." />
+    <meta name="twitter:url" content="http://localhost:2368/how-aws-lambda-made-me-a-better-programmer/" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "Let's Go Exploring!",
+    "author": {
+        "@type": "Person",
+        "name": "Engin Dogusoy",
+        "image": "//www.gravatar.com/avatar/9dbe6b19573734f32913b57f6d74b124?s=250&d=mm&r=x",
+        "url": "http://localhost:2368/author/engin",
+        "sameAs": null,
+        "description": null
+    },
+    "headline": "How AWS Lambda made me a better cloud developer?",
+    "url": "http://localhost:2368/how-aws-lambda-made-me-a-better-programmer/",
+    "datePublished": "2015-12-20T03:38:26.661Z",
+    "dateModified": "2015-12-20T03:55:15.057Z",
+    "keywords": "lambda, aws, ami",
+    "description": "AWS Lambda is a pretty big deal both for devops and REST APIs. It is a simple promise; instead of running a machine at all times to compute when needed, start a machine (fast!) when needed and release it after..."
+}
+    </script>
+
+    <meta name="generator" content="Ghost 0.7" />
+    <link rel="alternate" type="application/rss+xml" title="Let&#x27;s Go Exploring!" href="../rss/index.html" />
+</head>
+<body class="post-template tag-lambda tag-aws tag-ami nav-closed">
+
+    <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="index.html#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+            <li class="nav-about" role="presentation"><a href="../about/index.html">About</a></li>
+            <li class="nav-github" role="presentation"><a href="https://github.com/engd">GitHub</a></li>
+            <li class="nav-linkedin" role="presentation"><a href="https://www.linkedin.com/in/engindogusoy">LinkedIn</a></li>
+            <li class="nav-resume" role="presentation"><a href="https://dl.dropboxusercontent.com/u/5894566/engin_dogusoy_resume.pdf">Resume</a></li>
+            <li class="nav-contact" role="presentation"><a href="mailto:engin.dogusoy@gmail.com">Contact</a></li>
+    </ul>
+    <a class="subscribe-button" href="../index.html">Blog</a>
+</div>
+<span class="nav-cover"></span>
+
+
+    <div class="site-wrapper">
+
+        
+
+
+<header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        
+            <a class="menu-button icon-menu" href="index.html#"><span class="word">Menu</span></a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+    <article class="post tag-lambda tag-aws tag-ami">
+
+        <header class="post-header">
+            <h1 class="post-title">How AWS Lambda made me a better cloud developer?</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2015-12-19">19 December 2015</time>  on <a href="../tag/lambda/index.html">lambda</a>, <a href="../tag/aws/index.html">aws</a>, <a href="../tag/ami/index.html">ami</a>
+            </section>
+        </header>
+
+        <section class="post-content">
+            <p>AWS Lambda is a pretty <a href="http://www.engindogusoy.com/aws-lambda-missing-piece-of-aws-orchestration/">big deal</a> both for devops and REST APIs. It is a simple promise; instead of running a machine at all times to compute when needed, start a machine (fast!) when needed and release it after computation is done. Health checks, monitoring, scaling and even security (in some cases) problems are things of the past and you have more resources to focus on your value proposition. </p>
+
+<p>After spending some time with Lambda I've realized that its on demand nature forces good cloud development rules and saves developers from some common pitfalls.</p>
+
+<h5 id="everythingisvolatile">Everything is volatile</h5>
+
+<p>People like hacks, especially when things are on fire. When your servers start to go down, "I'll connect to the server and change/install/stop &#95;&#95;&#95;&#95;" would be one of the first responses you'll hear. You can fill the gap with a configuration, a monitoring tool or even a tiny local database. You should say NO. None of the changes will be carried to new instances, existing and future instances will be different from one another and worst if your setup includes an auto-scaling group AWS might choose to shut down your oldest instance, the one most likely to have extra stuff, when it is time to scale down.</p>
+
+<p>If you want something to run in your servers it should be a part of your <a href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html">AWS AMI</a> and all of your active instances should be started with the same AMI. Your instances should NEVER handle persistence, unless they are specifically designed to do that, not even for small static stuff. I also like to prohibit key based SSH access to ElasticBeanstalk environments I manage.</p>
+
+<p>With Lambda, you don't have access to rest of the system. You can't save stuff locally, you don't know where your code is running so you can't access to underlying machine. You have to work in scope and persist anything outside of Lambda.</p>
+
+<h5 id="singleresponsibility">Single responsibility</h5>
+
+<p>When you have a machine running at all times and don't have a great deal of requests, it is tempting to deploy more stuff on the same machine. I am not talking about improving the same functionality but deploying other functionalities and even unrelated systems on the same machine. Result; monolithic applications and/or multiple applications on the same machine, a coupling and debugging hell.</p>
+
+<p>With Lambda your code is decoupled from everything else, it only exists at the time of execution.</p>
+
+<h5 id="optimizationmatters">Optimization matters</h5>
+
+<p>Lambda is priced by number of executions, reserved memory and execution duration. You need to make sure your Lambda code runs in the shortest time possible and is memory light. In Lambda pretty much nothing is premature optimization.</p>
+
+<p>In the early days of your newly built backend the demand might not be high and you may skip optimizing number of calls from clients to the backend. In addition to creating scaling problems, unoptimized mobile clients bring hidden battery and network costs to your users. To keep number of Lambda invocations low, you might want to start with caching.</p>
+
+<h5 id="neverassumeanything">Never assume anything</h5>
+
+<p>You may not be looking for global domination in the near future. Your servers might not be distributed and you may not be using multiple availability zones. Maybe you are focusing on a geographic location or network performance is not on the top of your small team's list. But most of these will be your top concerns some day. Your code should be completely independent of the execution environment and deployable to everywhere. </p>
+
+<p>Don't assume anything and with Lambda, you can't.</p>
+            <div id="disqus_thread"></div>
+<script>
+/**
+* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+
+s.src = '//engind.disqus.com/embed.js';
+
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+        </section>
+    </article>
+</main>
+
+<aside class="read-next">
+    <a class="read-next-story prev no-cover" href="../absurdly-simple-blog-hosting/index.html">
+        <section class="post">
+            <h2>Absurdly Simple Blog Hosting</h2>
+            <p>This website was once a single static page in my Dropbox and hosted with absurdly genius site44. Then I&hellip;</p>
+        </section>
+    </a>
+</aside>
+
+
+
+        <footer class="site-footer clearfix">
+            <section class="copyright"><a href="../index.html">Let&#x27;s Go Exploring!</a> &copy; 2015</section>
+            <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a>,
+            <a href="https://github.com/axitkhurana/buster">Buster</a> and
+            <a href="https://pages.github.com">GitHub Pages</a> </section>
+        </footer>
+
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    
+
+    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=1e8d918b72"></script>
+    <script type="text/javascript" src="../assets/js/index.js?v=1e8d918b72"></script>
+
+</body>
+</html>
