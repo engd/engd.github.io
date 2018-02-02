@@ -5,6 +5,7 @@
     <link>http://www.engindogusoy.com/</link>
     <description>Recent content on Engin Dogusoy</description>
     <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 05 Oct 2017 20:00:00 +0600</lastBuildDate>
     
 	<atom:link href="http://www.engindogusoy.com/index.xml" rel="self" type="application/rss+xml" />
     
@@ -21,120 +22,12 @@ Minimo keeps the focus on your content and lets it shine!</description>
     </item>
     
     <item>
-      <title></title>
-      <link>http://www.engindogusoy.com/blog/test-copy-10/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.engindogusoy.com/blog/test-copy-10/</guid>
-      <description>Test test</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://www.engindogusoy.com/blog/test-copy-11/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.engindogusoy.com/blog/test-copy-11/</guid>
-      <description>Test test</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://www.engindogusoy.com/blog/test-copy-12/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.engindogusoy.com/blog/test-copy-12/</guid>
-      <description>Test test</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://www.engindogusoy.com/blog/test-copy-2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.engindogusoy.com/blog/test-copy-2/</guid>
-      <description>Test test</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://www.engindogusoy.com/blog/test-copy-3/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.engindogusoy.com/blog/test-copy-3/</guid>
-      <description>Test test</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://www.engindogusoy.com/blog/test-copy-4/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.engindogusoy.com/blog/test-copy-4/</guid>
-      <description>Test test</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://www.engindogusoy.com/blog/test-copy-5/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.engindogusoy.com/blog/test-copy-5/</guid>
-      <description>Test test</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://www.engindogusoy.com/blog/test-copy-6/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.engindogusoy.com/blog/test-copy-6/</guid>
-      <description>Test test</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://www.engindogusoy.com/blog/test-copy-7/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.engindogusoy.com/blog/test-copy-7/</guid>
-      <description>Test test</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://www.engindogusoy.com/blog/test-copy-8/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.engindogusoy.com/blog/test-copy-8/</guid>
-      <description>Test test</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://www.engindogusoy.com/blog/test-copy-9/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.engindogusoy.com/blog/test-copy-9/</guid>
-      <description>Test test</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://www.engindogusoy.com/blog/test-copy/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.engindogusoy.com/blog/test-copy/</guid>
-      <description>Test test</description>
-    </item>
-    
-    <item>
-      <title></title>
+      <title>Shortcodes</title>
       <link>http://www.engindogusoy.com/blog/test/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 05 Oct 2017 20:00:00 +0600</pubDate>
       
       <guid>http://www.engindogusoy.com/blog/test/</guid>
-      <description>Test test</description>
+      <description></description>
     </item>
     
   </channel>

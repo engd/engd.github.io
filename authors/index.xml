@@ -9,5 +9,14 @@
 	<atom:link href="http://www.engindogusoy.com/authors/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Engind</title>
+      <link>http://www.engindogusoy.com/authors/engind/</link>
+      <pubDate>Thu, 05 Oct 2017 20:00:00 +0600</pubDate>
+      
+      <guid>http://www.engindogusoy.com/authors/engind/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
