@@ -7,8 +7,14 @@
   </url>
   
   <url>
-    <loc>http://www.engindogusoy.com/blog/cron-jobs-1-aws/</loc>
-    <lastmod>2018-02-01T00:00:00+00:00</lastmod>
+    <loc>http://www.engindogusoy.com/blog/respect-for-the-legacy-code/</loc>
+    <lastmod>2018-10-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.engindogusoy.com/tags/architecture/</loc>
+    <lastmod>2018-10-24T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -17,38 +23,37 @@
   </url>
   
   <url>
-    <loc>http://www.engindogusoy.com/categories/aws/</loc>
-    <lastmod>2018-02-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://www.engindogusoy.com/blog/</loc>
-    <lastmod>2018-02-01T00:00:00+00:00</lastmod>
+    <lastmod>2018-10-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.engindogusoy.com/categories/</loc>
-    <lastmod>2018-02-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.engindogusoy.com/tags/elastic-beanstalk/</loc>
-    <lastmod>2018-02-01T00:00:00+00:00</lastmod>
+    <loc>http://www.engindogusoy.com/categories/code-quality/</loc>
+    <lastmod>2018-10-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.engindogusoy.com/</loc>
-    <lastmod>2018-02-01T00:00:00+00:00</lastmod>
+    <lastmod>2018-10-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.engindogusoy.com/authors/engind/</loc>
-    <lastmod>2018-02-01T00:00:00+00:00</lastmod>
+    <lastmod>2018-10-24T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.engindogusoy.com/tags/legacy-code/</loc>
+    <lastmod>2018-10-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -59,7 +64,7 @@
   
   <url>
     <loc>http://www.engindogusoy.com/tags/</loc>
-    <lastmod>2018-02-01T00:00:00+00:00</lastmod>
+    <lastmod>2018-10-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

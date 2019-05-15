@@ -5,17 +5,26 @@
     <link>http://www.engindogusoy.com/tags/</link>
     <description>Recent content in Tags on Engin Dogusoy</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 01 Feb 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 24 Oct 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://www.engindogusoy.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Elastic beanstalk</title>
-      <link>http://www.engindogusoy.com/tags/elastic-beanstalk/</link>
-      <pubDate>Thu, 01 Feb 2018 00:00:00 +0000</pubDate>
+      <title>Architecture</title>
+      <link>http://www.engindogusoy.com/tags/architecture/</link>
+      <pubDate>Wed, 24 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://www.engindogusoy.com/tags/elastic-beanstalk/</guid>
+      <guid>http://www.engindogusoy.com/tags/architecture/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Legacy Code</title>
+      <link>http://www.engindogusoy.com/tags/legacy-code/</link>
+      <pubDate>Wed, 24 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.engindogusoy.com/tags/legacy-code/</guid>
       <description></description>
     </item>
     
