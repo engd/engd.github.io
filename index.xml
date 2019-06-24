@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Engin Doğusoy</title>
-    <link>https://engindogusoy.com/</link>
+    <link>https://engd.github.io/</link>
     <description>Recent content on Engin Doğusoy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
     <lastBuildDate>Mon, 24 Jun 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://engindogusoy.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://engd.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>About</title>
-      <link>https://engindogusoy.com/about/</link>
+      <link>https://engd.github.io/about/</link>
       <pubDate>Mon, 24 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://engindogusoy.com/about/</guid>
+      <guid>https://engd.github.io/about/</guid>
       <description>I am a software engineer based in İstanbul, Turkey. I have a Computer Science and Engineering Bachelor&amp;rsquo;s Degree from Sabancı University and a Software Engineering Master&amp;rsquo;s Degree from Carnegie Mellon University.
 I started my career as a prototyping engineer working on various cool gadgets; car consoles, video game controllers, hand tracking systems, geospatial databases and even smart fabrics. Then I switched to mobile development and worked for a very cool startup called Fleksy in San Francisco.</description>
     </item>
     
     <item>
       <title>Creating a New Theme</title>
-      <link>https://engindogusoy.com/posts/creating-a-new-theme/</link>
+      <link>https://engd.github.io/posts/creating-a-new-theme/</link>
       <pubDate>Mon, 24 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://engindogusoy.com/posts/creating-a-new-theme/</guid>
+      <guid>https://engd.github.io/posts/creating-a-new-theme/</guid>
       <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
 We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
     </item>
