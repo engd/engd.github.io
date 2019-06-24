@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>aws on Engin Doğusoy</title>
-    <link>https://engd.github.io/tags/aws/</link>
+    <link>https://www.engindogusoy.com/tags/aws/</link>
     <description>Recent content in aws on Engin Doğusoy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
     <lastBuildDate>Mon, 24 Jun 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://engd.github.io/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.engindogusoy.com/tags/aws/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>AWS EC2: Self-referencing Security Groups</title>
-      <link>https://engd.github.io/posts/aws-ec2-self-referencing-security-groups/</link>
+      <link>https://www.engindogusoy.com/posts/aws-ec2-self-referencing-security-groups/</link>
       <pubDate>Mon, 24 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://engd.github.io/posts/aws-ec2-self-referencing-security-groups/</guid>
+      <guid>https://www.engindogusoy.com/posts/aws-ec2-self-referencing-security-groups/</guid>
       <description>Problem About 5 months ago we&amp;rsquo;ve decided that AWS Elastic Beanstalk will not be enough for our future needs as we scale Lifemote Networks and decided to move our services to AWS ECS. Last week as we moved our third service to ECS we ended up with a problem; in some of our AWS accounts, we assign a separate account and VPC to each customer, our newly deployed third service was not able to reach previously deployed services and as a result it was dropping requests.</description>
     </item>
     

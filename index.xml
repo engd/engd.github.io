@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Engin Doğusoy</title>
-    <link>https://engd.github.io/</link>
+    <link>https://www.engindogusoy.com/</link>
     <description>Recent content on Engin Doğusoy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
     <lastBuildDate>Mon, 24 Jun 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://engd.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.engindogusoy.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>AWS EC2: Self-referencing Security Groups</title>
-      <link>https://engd.github.io/posts/aws-ec2-self-referencing-security-groups/</link>
+      <link>https://www.engindogusoy.com/posts/aws-ec2-self-referencing-security-groups/</link>
       <pubDate>Mon, 24 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://engd.github.io/posts/aws-ec2-self-referencing-security-groups/</guid>
+      <guid>https://www.engindogusoy.com/posts/aws-ec2-self-referencing-security-groups/</guid>
       <description>Problem About 5 months ago we&amp;rsquo;ve decided that AWS Elastic Beanstalk will not be enough for our future needs as we scale Lifemote Networks and decided to move our services to AWS ECS. Last week as we moved our third service to ECS we ended up with a problem; in some of our AWS accounts, we assign a separate account and VPC to each customer, our newly deployed third service was not able to reach previously deployed services and as a result it was dropping requests.</description>
     </item>
     
     <item>
       <title>About</title>
-      <link>https://engd.github.io/about/</link>
+      <link>https://www.engindogusoy.com/about/</link>
       <pubDate>Mon, 24 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://engd.github.io/about/</guid>
+      <guid>https://www.engindogusoy.com/about/</guid>
       <description>I am a software engineer based in İstanbul, Turkey. I have a Computer Science and Engineering Bachelor&amp;rsquo;s Degree from Sabancı University and a Software Engineering Master&amp;rsquo;s Degree from Carnegie Mellon University.
 I started my career as a prototyping engineer working on various cool gadgets; car consoles, video game controllers, hand tracking systems, geospatial databases and even smart fabrics. Then I switched to mobile development and worked for a very cool startup called Fleksy in San Francisco.</description>
     </item>
