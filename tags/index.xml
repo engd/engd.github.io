@@ -1,32 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Engin Dogusoy</title>
-    <link>http://www.engindogusoy.com/tags/</link>
-    <description>Recent content in Tags on Engin Dogusoy</description>
+    <title>Tags on Engin Doğusoy</title>
+    <link>https://engindogusoy.com/tags/</link>
+    <description>Recent content in Tags on Engin Doğusoy</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 24 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
     
-	<atom:link href="http://www.engindogusoy.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://engindogusoy.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Architecture</title>
-      <link>http://www.engindogusoy.com/tags/architecture/</link>
-      <pubDate>Wed, 24 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.engindogusoy.com/tags/architecture/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Legacy Code</title>
-      <link>http://www.engindogusoy.com/tags/legacy-code/</link>
-      <pubDate>Wed, 24 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.engindogusoy.com/tags/legacy-code/</guid>
-      <description></description>
-    </item>
     
   </channel>
 </rss>

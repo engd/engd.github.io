@@ -3,68 +3,29 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://www.engindogusoy.com/about/</loc>
+    <loc>https://engindogusoy.com/about/</loc>
+    <lastmod>2019-06-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.engindogusoy.com/blog/respect-for-the-legacy-code/</loc>
-    <lastmod>2018-10-24T00:00:00+00:00</lastmod>
+    <loc>https://engindogusoy.com/posts/creating-a-new-theme/</loc>
+    <lastmod>2019-06-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.engindogusoy.com/tags/architecture/</loc>
-    <lastmod>2018-10-24T00:00:00+00:00</lastmod>
+    <loc>https://engindogusoy.com/</loc>
+    <lastmod>2019-06-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.engindogusoy.com/authors/</loc>
+    <loc>https://engindogusoy.com/posts/</loc>
+    <lastmod>2019-06-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.engindogusoy.com/blog/</loc>
-    <lastmod>2018-10-24T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.engindogusoy.com/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.engindogusoy.com/categories/code-quality/</loc>
-    <lastmod>2018-10-24T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.engindogusoy.com/</loc>
-    <lastmod>2018-10-24T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.engindogusoy.com/authors/engind/</loc>
-    <lastmod>2018-10-24T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.engindogusoy.com/tags/legacy-code/</loc>
-    <lastmod>2018-10-24T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.engindogusoy.com/page/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.engindogusoy.com/tags/</loc>
-    <lastmod>2018-10-24T00:00:00+00:00</lastmod>
+    <loc>https://engindogusoy.com/tags/</loc>
     <priority>0</priority>
   </url>
   
