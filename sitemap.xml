@@ -3,29 +3,29 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://engd.github.io/about/</loc>
+    <loc>http://www.engindogusoy.com/about/</loc>
     <lastmod>2019-06-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://engd.github.io/posts/creating-a-new-theme/</loc>
+    <loc>http://www.engindogusoy.com/posts/creating-a-new-theme/</loc>
     <lastmod>2019-06-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://engd.github.io/</loc>
-    <lastmod>2019-06-24T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://engd.github.io/posts/</loc>
+    <loc>http://www.engindogusoy.com/</loc>
     <lastmod>2019-06-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://engd.github.io/tags/</loc>
+    <loc>http://www.engindogusoy.com/posts/</loc>
+    <lastmod>2019-06-24T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.engindogusoy.com/tags/</loc>
     <priority>0</priority>
   </url>
   
