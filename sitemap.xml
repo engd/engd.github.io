@@ -3,53 +3,53 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://www.engindogusoy.com/posts/creating-a-new-theme/</loc>
+    <loc>https://engd.github.io/posts/aws-ec2-self-referencing-security-groups/</loc>
     <lastmod>2019-06-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.engindogusoy.com/about/</loc>
+    <loc>https://engd.github.io/about/</loc>
     <lastmod>2019-06-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.engindogusoy.com/</loc>
-    <lastmod>2019-06-24T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.engindogusoy.com/posts/</loc>
+    <loc>https://engd.github.io/</loc>
     <lastmod>2019-06-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.engindogusoy.com/tags/</loc>
+    <loc>https://engd.github.io/posts/</loc>
     <lastmod>2019-06-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.engindogusoy.com/tags/aws/</loc>
+    <loc>https://engd.github.io/tags/</loc>
     <lastmod>2019-06-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.engindogusoy.com/tags/ec2/</loc>
+    <loc>https://engd.github.io/tags/aws/</loc>
     <lastmod>2019-06-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.engindogusoy.com/tags/ecs/</loc>
+    <loc>https://engd.github.io/tags/ec2/</loc>
     <lastmod>2019-06-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.engindogusoy.com/tags/security-groups/</loc>
+    <loc>https://engd.github.io/tags/ecs/</loc>
+    <lastmod>2019-06-24T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://engd.github.io/tags/security-groups/</loc>
     <lastmod>2019-06-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>

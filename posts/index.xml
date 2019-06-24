@@ -1,35 +1,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Posts on Engin Doğusoy</title>
-		<link>https://www.engindogusoy.com/posts/</link>
+		<link>https://engd.github.io/posts/</link>
 		<description>Recent content in Posts on Engin Doğusoy</description>
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
 		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
 		<lastBuildDate>Mon, 24 Jun 2019 00:00:00 +0000</lastBuildDate>
-		<atom:link href="https://www.engindogusoy.com/posts/index.xml" rel="self" type="application/rss+xml" />
+		<atom:link href="https://engd.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
 		
 		<item>
 			<title>AWS EC2: Self-referencing Security Groups</title>
-			<link>https://www.engindogusoy.com/posts/creating-a-new-theme/</link>
+			<link>https://engd.github.io/posts/aws-ec2-self-referencing-security-groups/</link>
 			<pubDate>Mon, 24 Jun 2019 00:00:00 +0000</pubDate>
 			
-			<guid>https://www.engindogusoy.com/posts/creating-a-new-theme/</guid>
-			<description>Problem This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
-Investigation DRY is a good design goal and Hugo does a great job supporting it.</description>
+			<guid>https://engd.github.io/posts/aws-ec2-self-referencing-security-groups/</guid>
+			<description>Problem About 5 months ago we&amp;rsquo;ve decided that AWS Elastic Beanstalk will not be enough for our future needs as we scale Lifemote Networks and decided to move our services to AWS ECS. Last week as we moved our third service to ECS we ended up with a problem; in some of our AWS accounts, we assign a separate account and VPC to each customer, our newly deployed third service was not able to reach previously deployed services and as a result it was dropping requests.</description>
 			<content type="html"><![CDATA[
 
 <h3 id="problem">Problem</h3>
 
-<p>This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&rsquo;t cover using CSS to style your theme.</p>
+<p>About 5 months ago we&rsquo;ve decided that AWS Elastic Beanstalk will not be enough for our future needs as we scale Lifemote Networks and decided to move our services to AWS ECS. Last week as we moved our third service to ECS we ended up with a problem; in some of our AWS accounts, we assign a separate account and VPC to each customer, our newly deployed third service was not able to reach previously deployed services and as a result it was dropping requests.</p>
 
 <h3 id="investigation">Investigation</h3>
 
-<p>DRY is a good design goal and Hugo does a great job supporting it. Part of the art of a good template is knowing when to add a new template and when to update an existing one. While you&rsquo;re figuring that out, accept that you&rsquo;ll be doing some refactoring. Hugo makes that easy and fast, so it&rsquo;s okay to delay splitting up a template.</p>
+<p>We started with looking for anything odd in the infrastructure; by using CloudFormation drift detection we&rsquo;ve confirmed that stacks were identical for both accounts. Then we&rsquo;ve realized that ECS cluster in the problematic account had two EC2 instances spanned over two availability zone while the one without the problem had only one. This made us think about communication between availability zones but that also turned out to be a red herring as we failed to find any problems with route tables and NAT instances.</p>
+
+<p>Finally, we&rsquo;ve concluded that it had to be something about security groups and we should learn more about them. I must note here that our ECS cluster has only one security group and therefore all of our ECS EC2 instances have the same one. As expected a misinterpretation of the &ldquo;security group&rdquo; concept was in fact our problem.</p>
+
+<p>You see security groups are not real groups; instances that have the same security group do not really share a rule set but they each have an identical copy of the same rule set. In other words; two instances are not sitting together behind a perimeter but rather each of them sits behind an identical version of the same perimeter. As a result if you want two instances that have the same security group to talk to each other you need to make sure that your security group accepts connections from itself. It needs to be self-referencing because it is applied separately for each of those two instances. This problem was hidden to us before because our first two services were smaller and sit on the same machine. The calls between them never left the EC2 instance they are on and therefore never passed through a security group.</p>
 
 <h3 id="solution">Solution</h3>
 
-<p>DRY is a good design goal and Hugo does a great job supporting it. Part of the art of a good template is knowing when to add a new template and when to update an existing one. While you&rsquo;re figuring that out, accept that you&rsquo;ll be doing some refactoring. Hugo makes that easy and fast, so it&rsquo;s okay to delay splitting up a template.</p>
+<p>Luckily the fix was an easy one with a small caveat. It is very simple to add a self-referencing ingress rule to a security group either with the API or through the web console. However if you try to add it in a CloudFormation template as you create the security group itself you&rsquo;ll most likely fail due to a circular dependency. You should use an <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-ingress.html">SecurityGroupIngress resource</a>  rather than an inline security group ingress rule.</p>
+
+<pre><code> SecurityGroup:
+      Type: AWS::EC2::SecurityGroup
+      Properties:
+        GroupName: security-group
+        VpcId: !Ref VPC
+  
+  #adding this to avoid circular dependency
+  SelfReferenceRule:
+    Type: AWS::EC2::SecurityGroupIngress
+    Properties:
+      IpProtocol: &quot;-1&quot; #-1 used for all traffic
+      SourceSecurityGroupId: !Ref SecurityGroup
+      GroupId: !Ref SecurityGroup
+</code></pre>
 ]]></content>
 		</item>
 		

@@ -2,24 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>security groups on Engin Doğusoy</title>
-    <link>https://www.engindogusoy.com/tags/security-groups/</link>
+    <link>https://engd.github.io/tags/security-groups/</link>
     <description>Recent content in security groups on Engin Doğusoy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
     <lastBuildDate>Mon, 24 Jun 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://www.engindogusoy.com/tags/security-groups/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://engd.github.io/tags/security-groups/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>AWS EC2: Self-referencing Security Groups</title>
-      <link>https://www.engindogusoy.com/posts/creating-a-new-theme/</link>
+      <link>https://engd.github.io/posts/aws-ec2-self-referencing-security-groups/</link>
       <pubDate>Mon, 24 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://www.engindogusoy.com/posts/creating-a-new-theme/</guid>
-      <description>Problem This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
-Investigation DRY is a good design goal and Hugo does a great job supporting it.</description>
+      <guid>https://engd.github.io/posts/aws-ec2-self-referencing-security-groups/</guid>
+      <description>Problem About 5 months ago we&amp;rsquo;ve decided that AWS Elastic Beanstalk will not be enough for our future needs as we scale Lifemote Networks and decided to move our services to AWS ECS. Last week as we moved our third service to ECS we ended up with a problem; in some of our AWS accounts, we assign a separate account and VPC to each customer, our newly deployed third service was not able to reach previously deployed services and as a result it was dropping requests.</description>
     </item>
     
   </channel>
