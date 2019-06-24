@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Engin Doğusoy</title>
-    <link>https://www.engindogusoy.com/</link>
-    <description>Recent content on Engin Doğusoy</description>
+    <title>ecs on Engin Doğusoy</title>
+    <link>https://www.engindogusoy.com/tags/ecs/</link>
+    <description>Recent content in ecs on Engin Doğusoy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
     <lastBuildDate>Mon, 24 Jun 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://www.engindogusoy.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.engindogusoy.com/tags/ecs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -20,16 +20,6 @@
       <guid>https://www.engindogusoy.com/posts/creating-a-new-theme/</guid>
       <description>Problem This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
 Investigation DRY is a good design goal and Hugo does a great job supporting it.</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://www.engindogusoy.com/about/</link>
-      <pubDate>Mon, 24 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.engindogusoy.com/about/</guid>
-      <description>I am a software engineer based in İstanbul, Turkey. I have a Computer Science and Engineering Bachelor&amp;rsquo;s Degree from Sabancı University and a Software Engineering Master&amp;rsquo;s Degree from Carnegie Mellon University.
-I started my career as a prototyping engineer working on various cool gadgets; car consoles, video game controllers, hand tracking systems, geospatial databases and even smart fabrics. Then I switched to mobile development and worked for a very cool startup called Fleksy in San Francisco.</description>
     </item>
     
   </channel>

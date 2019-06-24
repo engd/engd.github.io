@@ -2,14 +2,51 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Engin Doğusoy</title>
-    <link>http://www.engindogusoy.com/tags/</link>
+    <link>https://www.engindogusoy.com/tags/</link>
     <description>Recent content in Tags on Engin Doğusoy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Mon, 24 Jun 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://www.engindogusoy.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.engindogusoy.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>aws</title>
+      <link>https://www.engindogusoy.com/tags/aws/</link>
+      <pubDate>Mon, 24 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.engindogusoy.com/tags/aws/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ec2</title>
+      <link>https://www.engindogusoy.com/tags/ec2/</link>
+      <pubDate>Mon, 24 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.engindogusoy.com/tags/ec2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ecs</title>
+      <link>https://www.engindogusoy.com/tags/ecs/</link>
+      <pubDate>Mon, 24 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.engindogusoy.com/tags/ecs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>security groups</title>
+      <link>https://www.engindogusoy.com/tags/security-groups/</link>
+      <pubDate>Mon, 24 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.engindogusoy.com/tags/security-groups/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
